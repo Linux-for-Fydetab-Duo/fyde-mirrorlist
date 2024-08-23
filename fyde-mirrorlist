@@ -1,0 +1,9 @@
+# --> Fyde Arch Repo Mirrorlist <-- #
+
+# Main Server - USA
+
+Server = https://fyde.panda-sa.ma/repo/$repo/$arch
+
+# Mirror Server - Hong Kong
+
+Server = https://deb-mirror.fydeos.com/pacman/repo/$repo/$arch

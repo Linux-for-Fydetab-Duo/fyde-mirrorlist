@@ -1,0 +1,10 @@
+post_install() {
+post_upgrade
+}
+
+post_upgrade() {
+rm -f /etc/pacman.d/fyde-mirrorlist > /dev/null 2>&1
+echo "Refreshing fyde mirrorlist..."
+cp /etc/pacman.d/fyde-mirrorlist-new /etc/pacman.d/fyde-mirrorlist > /dev/null 2>&1
+rm -f /etc/pacman.d/fyde-mirrorlist-new > /dev/null 2>&1
+}
